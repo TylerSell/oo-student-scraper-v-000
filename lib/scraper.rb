@@ -16,7 +16,8 @@ class Scraper
       details[:name] = student.css(".student-name").text 
       details[:location] = student.css(".student-location").text 
       url = list.css(".student-card a[href]")
-      details[:profile_url] = list.css(".student-card a[href]")  
+      url.select do |link|
+        details[:profile_url] = link['href']
       students << details
     end
     students
