@@ -60,7 +60,7 @@ class Scraper
     
     student_profile[:profile_quote] = page.css(".profile-quote").text 
     
-    student_profile[:bio] = page.css(".description-holder div")
+    student_profile[:bio] = page.css(".description-holder p").text
     
    
   end
