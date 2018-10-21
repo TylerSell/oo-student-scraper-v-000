@@ -47,7 +47,7 @@ class Scraper
     student_profile = {}
     
     page.css(".social-icon-container a").each do |social|
-      
+      if social.attribute
     
    
   end
