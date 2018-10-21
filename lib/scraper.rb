@@ -46,7 +46,7 @@ class Scraper
     page = Nokogiri::HTML(html)
     student_profile = {}
     
-    page.css(".")
+    page.css(".social-icon-container a")
     
    
   end
